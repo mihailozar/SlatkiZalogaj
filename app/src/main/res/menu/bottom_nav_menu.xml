@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_pocetna"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_pocetna" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/baseline_bakery_dining_24"
+        android:title="@string/title_kategorije" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/room_service_24px"
+        android:title="@string/title_porudzbine" />
+    <item
+        android:id="@+id/navigation_profil"
+        android:icon="@drawable/person_24px"
+        android:title="@string/title_profil" />
+
+</menu>

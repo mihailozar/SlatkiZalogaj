@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.Profile">
+
+    <!-- res/layout/fragment_profile.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#68FFFFFF"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="#A3D7C6C6"
+            android:src="@drawable/person_24px" />
+
+        <!-- User's Name -->
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:text="John Doe"
+            android:textSize="18sp" />
+
+        <!-- User's Bio -->
+        <TextView
+            android:id="@+id/bioTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Passionate Android Developer. Enjoys coding and exploring new technologies. Loves to travel and try different cuisines." />
+
+        <!-- Interests -->
+        <TextView
+            android:id="@+id/interestsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Interests: Mobile Development, UI/UX Design, Travel, Photography" />
+
+        <!-- Social Media Links -->
+        <TextView
+            android:id="@+id/socialMediaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Connect with me: Instagram, Twitter, LinkedIn" />
+
+        <!-- Floating Action Button for a Hypothetical Action -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/hypotheticalActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+
+</FrameLayout>

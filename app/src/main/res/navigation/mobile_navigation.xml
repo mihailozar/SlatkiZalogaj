@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_pocetna">
+
+    <fragment
+        android:id="@+id/navigation_pocetna"
+        android:name="com.example.slatkizalogaj.ui.pocetna.HomeFragment"
+        android:label="@string/title_pocetna"
+        tools:layout="@layout/fragment_pocetna" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.slatkizalogaj.ui.kategorije.KategorijeFragment"
+        android:label="@string/title_kategorije"
+        tools:layout="@layout/fragment_kategorije" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_detalji"
+            app:destination="@id/detalji" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.slatkizalogaj.ui.porudzbine.PorudzbineFragment"
+        android:label="@string/title_porudzbine"
+        tools:layout="@layout/fragment_porudzbine" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.slatkizalogaj.ui.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profil"
+        android:name="com.example.slatkizalogaj.ui.profile.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/detalji"
+        android:name="com.example.slatkizalogaj.ui.Detalji"
+        android:label="fragment_detalji"
+        tools:layout="@layout/fragment_detalji" >
+        <action
+            android:id="@+id/action_detalji_pop"
+            app:popUpTo="@id/detalji"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
